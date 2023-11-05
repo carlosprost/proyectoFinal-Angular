@@ -37,6 +37,21 @@
       "user_id": 1,
       "createSession": "2023-11-05T02:08:27.293Z",
       "id": 6
+    },
+    {
+      "user_id": 1,
+      "createSession": "2023-11-05T02:49:37.078Z",
+      "id": 7
+    },
+    {
+      "user_id": 1,
+      "createSession": "2023-11-05T03:43:54.848Z",
+      "id": 8
+    },
+    {
+      "user_id": 1,
+      "createSession": "2023-11-05T04:01:47.679Z",
+      "id": 9
     }
   ],
   "students": [

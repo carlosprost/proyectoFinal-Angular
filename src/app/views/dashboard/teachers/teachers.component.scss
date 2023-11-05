@@ -1,0 +1,41 @@
+.teacher {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    .buttonActions{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .tableTeacher {
+      width: 100%;
+      height: 100%;
+  
+      .searchTeachers{
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .full-width{
+          width: 100%;
+        }
+      }
+  
+      app-teacher-table{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+  }
+  

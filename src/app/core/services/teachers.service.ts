@@ -9,23 +9,23 @@ export class TeachersService {
   URL: string = 'http://localhost:3000/teachers';
   constructor(private http: HttpClient) {}
 
-  getTeachers() {
+  getTeachers$() {
     return this.http.get<Teacher[]>(this.URL);
   }
 
-  getTeacher(id: number) {
+  getTeacher$(id: number) {
     return this.http.get<Teacher>(`${this.URL}/${id}`);
   }
 
-  createTeacher(teacher: Teacher) {
+  createTeacher$(teacher: Teacher) {
     return this.http.post(this.URL, teacher);
   }
 
-  deleteTeacher(id: number) {
+  deleteTeacher$(id: number) {
     return this.http.delete(`${this.URL}/${id}`);
   }
 
-  updateTeacher(id: number, teacher: Teacher) {
+  updateTeacher$(id: number, teacher: Teacher) {
     return this.http.put(`${this.URL}/${id}`, teacher);
   }
 }

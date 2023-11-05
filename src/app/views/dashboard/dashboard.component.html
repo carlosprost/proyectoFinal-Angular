@@ -1,13 +1,12 @@
 <section class="dashboard">
   <app-toolbar [title]="title" [drawer]="drawer"></app-toolbar>
-<mat-drawer-container class="drawer-container" autosize>
-  <mat-drawer #drawer class="drawer-sidenav" mode="side">
-    <app-sidebar [drawer]="drawer"></app-sidebar>
-  </mat-drawer>
+  <mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="drawer-sidenav" mode="side">
+      <app-sidebar [drawer]="drawer"></app-sidebar>
+    </mat-drawer>
 
-  <div class="drawer-sidenav-content">
-    <router-outlet></router-outlet>
-  </div>
-
-</mat-drawer-container>
+    <div class="drawer-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
 </section>

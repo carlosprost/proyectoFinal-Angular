@@ -1,9 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Student } from 'src/app/interfaces/students';
 import { StudentsService } from 'src/app/core/services/students.service';
 import { DialogStudentComponent } from './components/dialog-student/dialog-student.component';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
