@@ -1,0 +1,19 @@
+<section class="student">
+    <section class="tableStudent">
+        <section class="searchStudents">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Buscar estudiante</mat-label>
+                <input matInput (keyup)="searchStudent($event)">
+            </mat-form-field>
+        </section>
+        <section class="buttonActions">
+            <button mat-button color="primary" (click)="openDialog()">Nuevo Estudiante</button>
+        </section>
+        <app-table
+            [data]="(students$ | async) || []"
+            (deleteElement)="deleteStudent($event)"
+            (editElement)="openDialogEdit($event)"
+            ></app-table>
+    </section>
+    
+</section>
